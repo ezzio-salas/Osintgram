@@ -142,7 +142,7 @@ class Osintgram:
             t.align["Post"] = "l"
             t.align["Address"] = "l"
             t.align["Time"] = "l"
-            pc.printout("\nWoohoo! We found " + str(len(sort_addresses)) + " addresses\n", pc.GREEN)
+            pc.printout("\nHaaa perrou encontraste " + str(len(sort_addresses)) + " addresses\n", pc.GREEN)
 
             i = 1
 
@@ -207,7 +207,7 @@ class Osintgram:
         json_data = {}
 
         if counter > 0:
-            pc.printout("\nWoohoo! We found " + str(counter) + " captions\n", pc.GREEN)
+            pc.printout("\nHaaa perrou encontraste " + str(counter) + " captions\n", pc.GREEN)
 
             file = None
 
@@ -652,7 +652,7 @@ class Osintgram:
                 file.write(str(photo_counter) + " photos and " + str(video_counter) + " video posted by target\n")
                 file.close()
 
-            pc.printout("\nWoohoo! We found " + str(photo_counter) + " photos and " + str(video_counter) +
+            pc.printout("\nHaaa perrou encontraste " + str(photo_counter) + " photos and " + str(video_counter) +
                         " video posted by target\n", pc.GREEN)
 
             if self.jsonDump:
@@ -743,7 +743,7 @@ class Osintgram:
             next_max_id = results.get('next_max_id')
 
         if len(posts) > 0:
-            pc.printout("\nWoohoo! We found " + str(len(posts)) + " photos\n", pc.GREEN)
+            pc.printout("\nHaaa perrou encontraste " + str(len(posts)) + " photos\n", pc.GREEN)
 
             users = []
 
@@ -803,7 +803,7 @@ class Osintgram:
         dd = data['graphql']['user']['edge_owner_to_timeline_media']['edges']
 
         if len(dd) > 0:
-            pc.printout("\nWoohoo! We found " + str(len(dd)) + " descriptions\n", pc.GREEN)
+            pc.printout("\nHaaa perrou encontraste " + str(len(dd)) + " descriptions\n", pc.GREEN)
 
             count = 1
 
@@ -1011,7 +1011,7 @@ class Osintgram:
             t.align["Username"] = "l"
             t.align["ID"] = "l"
 
-            pc.printout("\nWoohoo! We found " + str(len(ids)) + " (" + str(counter) + ") users\n", pc.GREEN)
+            pc.printout("\nHaaa perrou encontraste " + str(len(ids)) + " (" + str(counter) + ") users\n", pc.GREEN)
 
             json_data = {}
             tagged_list = []
