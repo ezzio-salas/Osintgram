@@ -17,14 +17,15 @@ except:
 
 
 def printlogo():
-    pc.printout(artwork.ascii_art, pc.YELLOW)
-    pc.printout("\nVersion 1.1 - Developed by Giuseppe Criscione\n\n", pc.YELLOW)
-    pc.printout("Type 'list' to show all allowed commands\n")
-    pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
-    pc.printout("Type 'FILE=n' to disable saving to files'\n")
-    pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
-                "disabled)'\n")
-    pc.printout("Type 'JSON=n' to disable exporting to files'\n")
+    pc.printout(artwork.ascii_art, pc.CYAN)
+    pc.printout("\nVersion X.X.X.X  by\n", pc.YELLOW)
+    pc.printout("Ezzio Salas \n\n", pc.RED)
+    #pc.printout("Type 'list' to show all allowed commands\n")
+    #pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
+    #pc.printout("Type 'FILE=n' to disable saving to files'\n")
+    #pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
+    #            "disabled)'\n")
+    #pc.printout("Type 'JSON=n' to disable exporting to files'\n")
 
 
 def cmdlist():
@@ -81,7 +82,7 @@ def cmdlist():
 
 
 def signal_handler(sig, frame):
-    pc.printout("\nGoodbye!\n", pc.RED)
+    pc.printout("\nHasta la vista Vite!\n", pc.RED)
     sys.exit(0)
 
 
@@ -93,7 +94,7 @@ def completer(text, state):
         return None
 
 def _quit():
-    pc.printout("Goodbye!\n", pc.RED)
+    pc.printout("Hasta la vista Vite!\n", pc.RED)
     sys.exit(0)
 
 
@@ -177,7 +178,7 @@ while True:
         else:
             gnureadline.parse_and_bind("tab: complete")
             gnureadline.set_completer(completer)
-        pc.printout("Run a command: ", pc.YELLOW)
+        pc.printout("Run a Command[Happy Hacking Bromigo]: ", pc.YELLOW)
         cmd = input()
 
         _cmd = commands.get(cmd)
