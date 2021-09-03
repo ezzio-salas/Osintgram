@@ -911,7 +911,7 @@ class Osintgram:
         sys.stdout.write(" photos")
         sys.stdout.flush()
 
-        pc.printout("\nWoohoo! We downloaded " + str(counter) + " photos (saved in " + self.output_dir + " folder) \n", pc.GREEN)
+        pc.printout("\Haaa perrouuu bajaeste " + str(counter) + " photos (saved in " + self.output_dir + " folder) \n", pc.GREEN)
 
     def get_user_propic(self):
 
